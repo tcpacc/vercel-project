@@ -11,9 +11,7 @@ function App() {
 
   return (
      <>
-    <GlobalContext.Provider value={"da"}>
-      <RouterProvider router={router}/>
-    </GlobalContext.Provider>
+    <RouterProvider router={router}/>
 
     </>
   )
