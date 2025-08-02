@@ -4,7 +4,10 @@ export default function Home(){
     return (
         <>
             <h1>hi</h1>
-            <Link to={'/about'}>About Us</Link>
+            <div style={{display:"flex",columnGap:20+"px"}}>
+                <Link to={'/about'}>About Us</Link>
+                <Link to={'/contact'}>Contact Us</Link>
+            </div>
         </>
     )
 }
