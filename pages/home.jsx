@@ -7,6 +7,7 @@ export default function Home(){
             <div style={{display:"flex",columnGap:20+"px"}}>
                 <Link to={'/about'}>About Us</Link>
                 <Link to={'/contact'}>Contact Us</Link>
+                <Link to={'/temperature'}>Temperature</Link>
             </div>
         </>
     )

@@ -8,6 +8,16 @@ import './App.css'
 import Home from '../pages/home'
 import About from '../pages/about'
 import Contact from '../pages/contact'
+import axios from 'axios'
+import Temperature from '../pages/temperature'
+
+const temp = await axios.get('https://seppbp.pythonanywhere.com/temperature')
+                .then(res => res.data)
+                .catch(function (error) {
+                    console.log(error);
+                })
+                .finally(function () {
+                });
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path='temperature' element={<Temperature temp={temperature}/>}></Route>
       </Routes>
     </Router>
     </>
