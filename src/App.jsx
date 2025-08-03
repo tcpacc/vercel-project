@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact/>} />
-        <Route path='temperature' element={<Temperature temp={temp}/>}></Route>
+        <Route path='/temperature' element={<Temperature temp={temp.temperature}/>}></Route>
       </Routes>
     </Router>
     </>

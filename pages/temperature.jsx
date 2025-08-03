@@ -1,7 +1,7 @@
-export default function Temperature(temp){
+export default function Temperature({temp}){
     return (
         <>
-            <h1>{temp.temperature}</h1>
+            <h1>{temp}</h1>
         </>
     )
 }
